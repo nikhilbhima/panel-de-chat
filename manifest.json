@@ -18,6 +18,15 @@
     },
     "default_title": "Panel de Chat"
   },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M",
+        "mac": "Command+Shift+M"
+      },
+      "description": "Toggle Panel de Chat"
+    }
+  },
   "background": {
     "service_worker": "background.js"
   },
