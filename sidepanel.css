@@ -4,7 +4,6 @@
   --border: #262626;
   --fg: #e5e5e5;
   --muted: #8a8a8a;
-  --accent: #FA520F;
 }
 
 html, body {
@@ -42,12 +41,12 @@ body {
 }
 
 .logo {
-  font-weight: 800;
-  font-size: 17px;
-  color: var(--accent);
-  line-height: 1;
-  letter-spacing: -0.03em;
-  padding-left: 2px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+  border-radius: 4px;
+  image-rendering: pixelated;
 }
 
 .actions {
