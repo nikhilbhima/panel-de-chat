@@ -2,6 +2,8 @@
 
 Chrome extension that opens [chat.mistral.ai](https://chat.mistral.ai) in Chrome's side panel.
 
+> Unofficial community project. Not affiliated with, endorsed by, or sponsored by Mistral AI.
+
 ## Requirements
 
 Chrome 114 or newer (the side panel API was added in 114).
@@ -40,6 +42,10 @@ If the iframe fails to load within a few seconds, the panel shows a fallback wit
 
 No build step. Edit source files, then click the reload icon on the extension card at `chrome://extensions`.
 
+## Trademarks
+
+"Mistral AI", "Le Chat", and the Mistral "M" logo are trademarks of Mistral AI. They are used here only to identify the service this extension wraps. This project is independent and is not affiliated with or endorsed by Mistral AI.
+
 ## License
 
-MIT. See `LICENSE`.
+MIT. See `LICENSE`. The MIT license covers the code in this repository only; it does not grant any rights to the Mistral AI trademarks referenced above.
