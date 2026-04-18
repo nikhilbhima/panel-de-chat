@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Panel de Chat",
+  "version": "0.1.0",
+  "description": "Le Chat in Chrome's side panel.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Panel de Chat"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "permissions": [
+    "sidePanel",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://*.mistral.ai/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "mistral_headers",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

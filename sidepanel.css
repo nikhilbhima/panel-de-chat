@@ -1,0 +1,134 @@
+:root {
+  --bg: #0f0f0f;
+  --bar-bg: #0f0f0f;
+  --border: #262626;
+  --fg: #e5e5e5;
+  --muted: #8a8a8a;
+  --accent: #FA520F;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  height: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  background: var(--bar-bg);
+  border-bottom: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  padding-left: 2px;
+}
+
+.actions {
+  display: flex;
+  gap: 2px;
+}
+
+.icon-btn {
+  background: none;
+  border: 0;
+  padding: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+}
+
+.icon-btn:hover {
+  color: var(--fg);
+}
+
+.icon-btn:focus-visible {
+  outline: 1px solid var(--border);
+  outline-offset: 1px;
+}
+
+.icon-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+.frame-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  background: var(--bg);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.fallback {
+  display: none;
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+  text-align: center;
+  background: var(--bg);
+}
+
+.fallback.show {
+  display: flex;
+}
+
+.fallback p {
+  margin: 0;
+  color: var(--fg);
+  font-size: 13px;
+}
+
+.fallback a {
+  color: var(--bg);
+  background: var(--fg);
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.fallback a:hover {
+  opacity: 0.85;
+}
