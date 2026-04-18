@@ -11,7 +11,7 @@
       ]
     },
     "condition": {
-      "urlFilter": "||mistral.ai",
+      "urlFilter": "||chat.mistral.ai",
       "resourceTypes": ["sub_frame", "main_frame"]
     }
   }

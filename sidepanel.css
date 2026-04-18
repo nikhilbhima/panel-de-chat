@@ -1,6 +1,5 @@
 :root {
   --bg: #0f0f0f;
-  --bar-bg: #0f0f0f;
   --border: #262626;
   --fg: #e5e5e5;
   --muted: #8a8a8a;
@@ -30,7 +29,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  background: var(--bar-bg);
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   box-sizing: border-box;
 }

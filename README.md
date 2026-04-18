@@ -14,7 +14,7 @@ Click the toolbar icon to toggle the side panel.
 
 ## How it works
 
-`background.js` sets the toolbar action to open the side panel on click. `sidepanel.html` hosts an iframe pointing at `https://chat.mistral.ai/`. A declarativeNetRequest ruleset (`rules.json`) removes `X-Frame-Options` and `Content-Security-Policy` response headers for requests to `mistral.ai`, so the page renders inside the iframe.
+`background.js` sets the toolbar action to open the side panel on click. `sidepanel.html` hosts an iframe pointing at `https://chat.mistral.ai/`. A declarativeNetRequest ruleset (`rules.json`) removes `X-Frame-Options` and `Content-Security-Policy` response headers for requests to `chat.mistral.ai`, so the page renders inside the iframe.
 
 If the iframe fails to load within a few seconds, the panel shows a fallback with a link that opens Le Chat in a new tab.
 
@@ -22,7 +22,7 @@ If the iframe fails to load within a few seconds, the panel shows a fallback wit
 
 - `sidePanel` for the side panel API
 - `declarativeNetRequest` for the static header ruleset
-- `host_permissions` on `https://*.mistral.ai/*` so header modification rules apply
+- `host_permissions` on `https://chat.mistral.ai/*` so header modification rules apply
 
 ## Files
 
