@@ -2,6 +2,10 @@
 
 Chrome extension that opens [chat.mistral.ai](https://chat.mistral.ai) in Chrome's side panel.
 
+## Requirements
+
+Chrome 114 or newer (the side panel API was added in 114).
+
 ## Install (unpacked)
 
 1. Clone this repo.
