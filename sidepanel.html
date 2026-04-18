@@ -6,32 +6,10 @@
   <link rel="stylesheet" href="sidepanel.css">
 </head>
 <body>
-  <header class="bar">
-    <div class="brand">
-      <img class="logo" src="icons/logo.svg" alt="" aria-hidden="true">
-    </div>
-    <div class="actions">
-      <button id="open-tab" class="icon-btn" title="Open in new tab" aria-label="Open in new tab">
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M9 3h4v4"></path>
-          <path d="M13 3l-6 6"></path>
-          <path d="M11 9v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h3"></path>
-        </svg>
-      </button>
-      <button id="close" class="icon-btn" title="Close" aria-label="Close side panel">
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 4l8 8"></path>
-          <path d="M12 4l-8 8"></path>
-        </svg>
-      </button>
-    </div>
-  </header>
-  <div class="frame-wrap">
-    <iframe id="frame" src="https://chat.mistral.ai/" title="Le Chat"></iframe>
-    <div id="fallback" class="fallback">
-      <p>Le Chat couldn't load in the side panel.</p>
-      <a href="https://chat.mistral.ai/" target="_blank" rel="noopener">Open in full tab</a>
-    </div>
+  <iframe id="frame" src="https://chat.mistral.ai/" title="Le Chat"></iframe>
+  <div id="fallback" class="fallback">
+    <p>Le Chat couldn't load in the side panel.</p>
+    <a href="https://chat.mistral.ai/" target="_blank" rel="noopener">Open in full tab</a>
   </div>
   <script src="sidepanel.js"></script>
 </body>

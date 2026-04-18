@@ -1,8 +1,6 @@
 :root {
   --bg: #0f0f0f;
-  --border: #262626;
   --fg: #e5e5e5;
-  --muted: #8a8a8a;
 }
 
 html, body {
@@ -18,73 +16,7 @@ html, body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-}
-
-.bar {
-  height: 40px;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  box-sizing: border-box;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: block;
-  width: 22px;
-  height: 22px;
-  margin-left: 2px;
-  border-radius: 4px;
-  image-rendering: pixelated;
-}
-
-.actions {
-  display: flex;
-  gap: 2px;
-}
-
-.icon-btn {
-  background: none;
-  border: 0;
-  padding: 6px;
-  color: var(--muted);
-  cursor: pointer;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font: inherit;
-}
-
-.icon-btn:hover {
-  color: var(--fg);
-}
-
-.icon-btn:focus-visible {
-  outline: 1px solid var(--border);
-  outline-offset: 1px;
-}
-
-.icon-btn svg {
-  width: 15px;
-  height: 15px;
-}
-
-.frame-wrap {
   position: relative;
-  flex: 1;
-  min-height: 0;
-  background: var(--bg);
 }
 
 iframe {
