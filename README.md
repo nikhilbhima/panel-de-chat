@@ -2,6 +2,8 @@
 
 Chrome extension that opens [chat.mistral.ai](https://chat.mistral.ai) in Chrome's side panel.
 
+Landing page: [panel-de-chat.vercel.app](https://panel-de-chat.vercel.app)
+
 > Unofficial community project. Not affiliated with, endorsed by, or sponsored by Mistral AI.
 
 ## Requirements

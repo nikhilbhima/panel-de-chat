@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Panel de Chat — Le Chat in your Chrome sidebar</title>
+<title>Panel de Chat · Le Chat in your Chrome sidebar</title>
 <meta name="description" content="An unofficial Chrome extension that puts Mistral's Le Chat in the Chrome side panel. No tab switching, no API key." />
 <link rel="icon" type="image/png" href="../icons/icon128.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -171,12 +171,6 @@
     margin-bottom: 28px;
     flex-wrap: wrap;
   }
-  .show-head .kicker {
-    font-size: 11.5px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-  }
   .show-head h2 {
     font-family: "Instrument Serif", "Times New Roman", Georgia, serif;
     font-weight: 400;
@@ -187,131 +181,7 @@
     max-width: 22ch;
   }
   .show-head h2 .accent { color: var(--orange); font-style: italic; }
-  .show-head .cap {
-    font-family: "Instrument Serif", serif;
-    font-style: italic;
-    font-size: 20px;
-    color: var(--ink-soft);
-    max-width: 32ch;
-    text-align: right;
-  }
-  @media (max-width: 720px) {
-    .show-head .cap { text-align: left; }
-  }
 
-  .show-grid {
-    display: grid;
-    grid-template-columns: 1.35fr 1fr;
-    gap: 28px;
-    align-items: stretch;
-  }
-  @media (max-width: 960px) {
-    .show-grid { grid-template-columns: 1fr; gap: 20px; }
-  }
-
-  .media-card {
-    border: 1px solid var(--border-strong);
-    border-radius: 14px;
-    background: #fff;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03), 0 24px 48px -32px rgba(30,30,30,0.22);
-  }
-  .media-label {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    padding: 10px 14px;
-    border-bottom: 1px solid var(--border);
-    background: var(--bg-2);
-  }
-  .media-label .dots {
-    display: inline-flex; gap: 5px;
-    flex: 0 0 auto;
-  }
-  .media-label .dots i {
-    width: 10px; height: 10px; border-radius: 50%;
-    background: #FF5F57; display: inline-block;
-  }
-  .media-label .dots i:nth-child(2) { background: #FEBC2E; }
-  .media-label .dots i:nth-child(3) { background: #28C840; }
-
-  .video-frame {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: #111;
-  }
-  .video-frame iframe,
-  .video-frame video {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%;
-    border: 0;
-  }
-  .video-frame video {
-    object-fit: cover;
-  }
-
-  /* Screenshot placeholder — striped, monospace note */
-  .shot-wrap {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  .shot {
-    flex: 1;
-    position: relative;
-    min-height: 320px;
-    background-image:
-      repeating-linear-gradient(
-        135deg,
-        rgba(30,30,30,0.05) 0,
-        rgba(30,30,30,0.05) 1px,
-        transparent 1px,
-        transparent 10px
-      ),
-      linear-gradient(180deg, #FBF4DC 0%, #F4EBC8 100%);
-  }
-  .shot-inner {
-    position: absolute;
-    inset: 20px;
-    border: 1px dashed var(--border-strong);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-  }
-  .shot-inner .note {
-    font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
-    font-size: 12px;
-    letter-spacing: 0.02em;
-    color: var(--ink-soft);
-    line-height: 1.5;
-    max-width: 28ch;
-  }
-  .shot-inner .note b {
-    color: var(--ink);
-    font-weight: 700;
-    display: block;
-    margin-bottom: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 10.5px;
-  }
-  .shot-inner .note em {
-    font-family: "Instrument Serif", serif;
-    font-style: italic;
-    font-size: 15px;
-    color: var(--ink);
-    display: block;
-    margin-top: 8px;
-  }
-
-  /* Left column */
   .eyebrow {
     display: inline-flex;
     align-items: center;
@@ -326,12 +196,6 @@
     background: rgba(255,255,255,0.5);
     white-space: nowrap;
   }
-  .eyebrow .dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    background: var(--orange);
-    box-shadow: 0 0 0 3px rgba(250,80,15,0.15);
-  }
-
   h1.headline {
     font-family: "Instrument Serif", "Times New Roman", Georgia, serif;
     font-weight: 400;
@@ -401,56 +265,6 @@
   .btn-secondary:hover { background: var(--ink); color: var(--bg); }
   .btn-secondary:active { transform: translateY(1px); }
 
-  .meta {
-    margin-top: 34px;
-    padding-top: 18px;
-    border-top: 1px solid var(--border);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px 32px;
-    font-size: 13px;
-    color: var(--ink-mute);
-  }
-  .meta span b { color: var(--ink); font-weight: 700; }
-
-  /* Right column — install card with the one unexpected detail */
-  .install-card {
-    background: #fff;
-    border: 1px solid var(--border-strong);
-    border-radius: 16px;
-    padding: 28px 30px 26px;
-    position: relative;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03), 0 24px 48px -28px rgba(30,30,30,0.2);
-  }
-  .card-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 14px;
-    margin-bottom: 4px;
-  }
-  .card-kicker {
-    font-size: 11.5px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-  }
-  .card-time {
-    font-family: "Instrument Serif", serif;
-    font-style: italic;
-    font-size: 18px;
-    color: var(--ink-soft);
-  }
-  .card-title {
-    font-family: "Instrument Serif", serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.05;
-    letter-spacing: -0.015em;
-    margin: 6px 0 18px;
-  }
-  .card-title .accent { color: var(--orange); font-style: italic; }
-
   .steps {
     display: grid;
     gap: 2px;
@@ -519,35 +333,6 @@
     color: var(--ink);
   }
 
-  /* Hand-drawn annotation: the one unexpected detail */
-  .annotation {
-    position: absolute;
-    top: 18px;
-    right: -64px;
-    display: flex;
-    align-items: flex-start;
-    gap: 4px;
-    transform: rotate(6deg);
-    color: var(--ink-soft);
-    pointer-events: none;
-  }
-  .annotation .note {
-    font-family: "Instrument Serif", serif;
-    font-style: italic;
-    font-size: 18px;
-    line-height: 1.05;
-    max-width: 8ch;
-    margin-top: 22px;
-  }
-  .annotation svg { width: 46px; height: 42px; color: var(--ink-soft); transform: scaleX(-1); }
-  @media (max-width: 1180px) {
-    .annotation { right: 14px; top: -18px; transform: rotate(-4deg); }
-    .annotation svg { transform: scaleX(1); }
-  }
-  @media (max-width: 560px) {
-    .annotation { display: none; }
-  }
-
   /* Footer */
   footer {
     border-top: 1px solid var(--border);
@@ -587,22 +372,8 @@
     border-radius: 12px;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03), 0 24px 48px -28px rgba(30,30,30,0.22);
   }
-  .hero-video .annotation {
-    position: absolute;
-    right: -18px;
-    bottom: -36px;
-    transform: rotate(-6deg);
-  }
-  .hero-video .annotation svg { transform: scaleX(1); }
-  @media (max-width: 960px) {
-    .hero-video .annotation { display: none; }
-  }
 
-  /* Screenshot wrap in section 2 now stands alone full-width */
-  .shot-wrap.single { max-width: 1120px; margin: 0 auto; }
-  .shot-wrap.single .shot { min-height: 480px; }
-
-  /* Section 2 split: video + how it works */
+  /* Section 2: install card */
   .how-wrap {
     max-width: 620px;
     margin: 0 auto;
@@ -714,9 +485,7 @@
       </h1>
 
       <p class="sub">
-        Stop switching tabs to talk to <b>Le Chat</b>. This tiny Chrome extension
-        tucks it into the native side panel, so it's right next to whatever
-        you're reading.
+        Stop switching tabs. <b>Le Chat</b> lives in your side panel, so you can ask, think, and move faster.
       </p>
 
       <div class="ctas">
