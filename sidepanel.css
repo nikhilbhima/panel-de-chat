@@ -49,6 +49,13 @@ iframe {
   font-size: 13px;
 }
 
+.fallback .hint {
+  font-size: 12px;
+  opacity: 0.65;
+  max-width: 240px;
+  line-height: 1.45;
+}
+
 .fallback a {
   color: var(--bg);
   background: var(--fg);
