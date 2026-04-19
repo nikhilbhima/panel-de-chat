@@ -10,3 +10,5 @@ build/
 .notes/
 _metadata/
 .superpowers/
+.vercel/
+*.zip
