@@ -14,6 +14,9 @@ frame.addEventListener('load', () => {
   if (loadCount === 0) {
     clearTimeout(fallbackTimer);
     firstLoadAt = now;
+  } else if (now - firstLoadAt > LOOP_WINDOW_MS) {
+    firstLoadAt = now;
+    loadCount = 0;
   }
   loadCount++;
   if (loadCount >= LOOP_THRESHOLD && (now - firstLoadAt) <= LOOP_WINDOW_MS) {
